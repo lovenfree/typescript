@@ -46,6 +46,7 @@ const energyGenerator = infiniteEnergyGenerator();
 
 for(let i =0; i<5; i++){
     //generate 함수는 next 를 가지고 있음. -> 실행을 재개한다.
+    //done 이라는 값이 있는데 done 을 확인하여 false일때 실행시키도록 한다
     console.log(energyGenerator.next());
 }
 

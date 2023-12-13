@@ -9,7 +9,8 @@ type Box = {
     ['className']?: string;
 }
 
-//객체리터럴
+//객체리터럴 : 코드로 객체를 생성
+//단점도 많음
 let box: Box = {
     width:200,
     height:200,
@@ -18,12 +19,15 @@ let box: Box = {
 }
 
 // 함수 이용
+// 변경에 용이한 구조
+// 데이터와 구조의 분리
 function makeBox(
     width:number,
     height:number,
     borderRadius:number,
     backgroundColor:string,
 ) : Box {
+    //key-value 축약형
     return {
         width,height,borderRadius,backgroundColor
     };
